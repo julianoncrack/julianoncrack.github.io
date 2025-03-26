@@ -5,31 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smooth Man Records</title>
     <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
+        * {
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            overflow: hidden;
         }
-        
-        h1 {
-            margin-bottom: 20px;
-        }
-        
         video {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #333;
-            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <video>
-        <source src="tipinit.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <video src="tipinit.mp4" autoplay loop muted></video>
 </body>
 </html>
